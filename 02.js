@@ -12,6 +12,13 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  let stringgrande = [];
+
+  for (let i = 0; i < strings.length; i++) {
+    if (strings [i] > stringgrande)
+    stringgrande = strings [i];
+  }
+  return stringgrande;
 }
 
 // No modifiques nada debajo de esta linea //
