@@ -15,7 +15,7 @@ function crearClasePersona() {
       this.edad = edad;
       this.hobbies = hobbies;
       this.amigos = amigos;
-
+      
     }
 
     addFriend(nombre, edad) {
@@ -83,9 +83,11 @@ function crearClasePersona() {
       // persona.getPromedioEdad() debería devolver 29 ya que (33 + 25) / 2 = 29
 
       // Tu código aca:
-      return this.amigos.map(amigo => amigo.edad).reduce((a, b) => a + b) / this.amigos.length;
-    
-}
+      return this.amigos.map(amigo => amigo.edad).reduce((a, b) => a + b) / this.amigos.length
+    };
+
+
+
     
 
       
@@ -93,3 +95,4 @@ function crearClasePersona() {
 // No modifiques nada debajo de esta linea //
 
 module.exports = crearClasePersona
+};
